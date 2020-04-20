@@ -24,7 +24,7 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
             "Dockerfile-$VARIANT.template" > Dockerfile
 
         docker \
-            build -t "quay.io/azavea/postgis:$POSTGIS_MAJOR-postgres$PG_MAJOR-$VARIANT" .
+            build -t "quay.io/vividfinancepg/postgis:$POSTGIS_MAJOR-postgres$PG_MAJOR-$VARIANT" .
 
         scripts/test
 
