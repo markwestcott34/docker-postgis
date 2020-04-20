@@ -11,5 +11,5 @@ deploy:
   - provider: script
     script: "scripts/cipublish"
     on:
-      repo: vividfinancepg/docker-postgis
+      repo: vividcrt/docker-postgis
       branch: master
