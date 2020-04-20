@@ -19,7 +19,10 @@ if [ "${BASH_SOURCE[0]}" = "${0}" ]; then
         usage
     else
         docker \
-            run -d --name postgres-test -p 5432:5432 "quay.io/vividfinancepg/postgis:$POSTGIS_MAJOR-postgres$PG_MAJOR-$VARIANT"
+            run -d --name postgres-test \
+            -p 5432:5432 \
+            -e POSTGRES_HOST_AUTH_METHOD=trust \
+            "quay.io/vividfinancepg/postgis:$POSTGIS_MAJOR-postgres$PG_MAJOR-$VARIANT"
 
         sleep 5
 
