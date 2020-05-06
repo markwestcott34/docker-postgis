@@ -1,5 +1,7 @@
 # docker-postgis
 
+[![Build Status](https://travis-ci.org/vividcrt/docker-postgis.svg?branch=master)](https://travis-ci.org/vividcrt/docker-postgis)
+
 This repository contains a collection of templated `Dockerfile` for image variants designed to support PostGIS through PostgreSQL.
 
 ## Usage
